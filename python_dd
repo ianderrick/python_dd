@@ -25,7 +25,7 @@ def get_output_device():
 # create a function to run the dd command
 def run_dd_command():
   # build the dd command using the input and output devices
-  dd_command = "dd if=" + input_device + " of=" + output_device
+  dd_command = "dd if=" + input_device + " of=" + output_device + " bs=1M"
   # run the dd command
   os.system(dd_command)
 
